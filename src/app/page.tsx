@@ -6,6 +6,8 @@ export default function Home() {
   return (
     <>
       <section className="welcome">
+        <h1>Welcome to Dam I.T.</h1>
+        <h2>Choose the step you are on :</h2>
         <article className="box_choice">
           {availableSteps.map((step) => (
             <Link href={`/quiz/${step.room_nd}`} key={step.id}>
