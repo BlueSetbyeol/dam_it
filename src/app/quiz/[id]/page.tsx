@@ -8,6 +8,10 @@ import type {
 import quiz from "../../lib/quiz_schema_V2.json";
 import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
+import Logo from "../../../../public/logo_dam_it.png";
+import Sort from "../../../../public/sorting electronic waste.png";
+import Repair from "../../../../public/electronic-product-repair.png";
+import Image from "next/image";
 
 export default function Quiz() {
   const { id } = useParams();
@@ -29,123 +33,159 @@ export default function Quiz() {
     });
   }
 
-  const [randomQuestion, setRandomQuestion] = useState<number>();
+  const [firstQuestion, setFirstQuestion] = useState<objectToQuiz>();
+  const [firstAnswer, setFirstAnswer] = useState<string[]>();
+  const [secondQuestion, setSecondQuestion] = useState<objectToQuiz>();
+  const [secondAnswer, setSecondAnswer] = useState<string[]>();
 
   useEffect(() => {
     const random = Math.floor(Math.random() * questionsAvailable.length);
-    setRandomQuestion(random);
+    if (random) {
+      const newFirstQuestion = objects_to_sort.find(
+        (sort) =>
+          sort.id === Number(questionsAvailable[random].object_to_sort_id)
+      );
+      setFirstQuestion(newFirstQuestion);
+      const newSecondQuestion = objects_to_repair.find(
+        (sort) =>
+          sort.id === Number(questionsAvailable[random].object_to_repair_id)
+      );
+      setSecondQuestion(newSecondQuestion);
+
+      const setOfFirstAnswer: string[] = [];
+      firstQuestion?.good_answer.forEach((goodAnswer) => {
+        const findAnswer = firstQuestion.answers.find(
+          (answer) => answer.name === goodAnswer
+        );
+        if (findAnswer) {
+          setOfFirstAnswer.push(findAnswer.value);
+        }
+      });
+      setFirstAnswer(setOfFirstAnswer);
+
+      const setOfSecondAnswer: string[] = [];
+      secondQuestion?.good_answer.forEach((goodAnswer) => {
+        const findAnswer = secondQuestion.answers.find(
+          (answer) => answer.name === goodAnswer
+        );
+        if (findAnswer) {
+          setOfSecondAnswer.push(findAnswer.value);
+        }
+      });
+      setSecondAnswer(setOfSecondAnswer);
+    }
   }, []);
 
-  let firstQuestion;
-  let secondQuestion;
-  const answersOfQuestions: string[][] = [];
+  const [finalScore, setFinalScore] = useState<number>(0);
 
-  if (randomQuestion) {
-    firstQuestion = objects_to_sort.find(
-      (sort) =>
-        sort.id === Number(questionsAvailable[randomQuestion].object_to_sort_id)
-    );
-    if (firstQuestion) {
-      answersOfQuestions.push(firstQuestion.good_answer);
+  const handleCheckingAnswer = (num: number, answerToCheck: string) => {
+    let score = finalScore;
+    if (num === 1 && firstQuestion) {
+      const rigthAnswer = firstQuestion.good_answer.includes(answerToCheck);
+      if (rigthAnswer) {
+        score++;
+      }
     }
-  }
-  if (randomQuestion) {
-    secondQuestion = objects_to_repair.find(
-      (sort) =>
-        sort.id ===
-        Number(questionsAvailable[randomQuestion].object_to_repair_id)
-    );
-    if (secondQuestion) {
-      answersOfQuestions.push(secondQuestion.good_answer);
+    if (num === 2 && secondQuestion) {
+      const rigthAnswer = secondQuestion.good_answer.includes(answerToCheck);
+      if (rigthAnswer) {
+        score++;
+      }
     }
-  }
-
-  console.log(answersOfQuestions);
+    setFinalScore(score);
+  };
 
   const [popUpClose, setPopUpClose] = useState(false);
   const [beginToFinish, setBeginToFinish] = useState(true);
   const [endGame, setEndGame] = useState(false);
 
-  const answerToKeep: string[] = [];
-  const [answerToCheck, setAnswerToCheck] = useState<string[]>([]);
-  console.log(answerToCheck);
-
-  let score = 0;
-
-  const checkingAnswer = (
-    answersOfQuestions: string[][],
-    answerToCheck: string[]
-  ) => {
-    if (answersOfQuestions && answerToCheck) {
-      answersOfQuestions.forEach((answer) => {
-        answer.forEach((possibilities) => {
-          if (answerToCheck.includes(possibilities)) {
-            score += 1;
-          }
-        });
-      });
-    }
-  };
-
-  checkingAnswer(answersOfQuestions, answerToCheck);
-
   return (
     <>
-      <section>
-        {beginToFinish ? (
-          !popUpClose ? (
-            <article>
+      {!endGame ? (
+        <section className="quizRoom">
+          {beginToFinish ? (
+            !popUpClose ? (
+              <article className="mission_zone">
+                <Image src={Sort} alt="logo dam IT" className="logo_icone" />
+                <p>{firstQuestion?.mission}</p>
+                <button type="button" onClick={() => setPopUpClose(true)}>
+                  Choose an answer
+                </button>
+              </article>
+            ) : (
+              <article className="answer_zone">
+                <p>Question : {firstQuestion?.mission}</p>
+                <div>
+                  {firstQuestion?.answers.map((object) => (
+                    <button
+                      type="button"
+                      key={object.name}
+                      className="solutions"
+                      onClick={() => {
+                        handleCheckingAnswer(1, object.name);
+                        setBeginToFinish(false);
+                        setPopUpClose(false);
+                      }}
+                    >
+                      {object.value}
+                    </button>
+                  ))}
+                </div>
+              </article>
+            )
+          ) : !popUpClose ? (
+            <article className="mission_zone">
+              <Image
+                src={Repair}
+                alt="logo dam IT"
+                className="logo_icone"
+              ></Image>
+              <p>{secondQuestion?.mission}</p>
               <button type="button" onClick={() => setPopUpClose(true)}>
-                X
+                Choose an answer
               </button>
-              <p>{firstQuestion?.mission}</p>
             </article>
           ) : (
             <article className="answer_zone">
-              {firstQuestion?.answers.map((object) => (
-                <button
-                  type="button"
-                  key={object.name}
-                  className="solutions"
-                  onClick={() => {
-                    answerToKeep.push(object.name);
-                    setAnswerToCheck(answerToKeep);
-                    setBeginToFinish(false);
-                    setPopUpClose(false);
-                  }}
-                >
-                  {object.value}
-                </button>
-              ))}
+              <p>Question : {secondQuestion?.mission}</p>
+              <div>
+                {secondQuestion?.answers.map(
+                  (object) =>
+                    object.value && (
+                      <button
+                        type="button"
+                        key={object.name}
+                        className="solutions"
+                        onClick={() => {
+                          handleCheckingAnswer(2, object.name);
+                          setEndGame(true);
+                        }}
+                      >
+                        {object.value}
+                      </button>
+                    )
+                )}
+              </div>
             </article>
-          )
-        ) : !popUpClose ? (
-          <article>
-            <button type="button" onClick={() => setPopUpClose(true)}>
-              X
-            </button>
-            <p>{secondQuestion?.mission}</p>
-          </article>
-        ) : (
-          <article className="answer_zone">
-            {secondQuestion?.answers.map((object) => (
-              <button
-                type="button"
-                key={object.name}
-                className="solutions"
-                onClick={() => {
-                  answerToKeep.push(object.name);
-                  setAnswerToCheck(answerToKeep);
-                  setEndGame(false);
-                }}
-              >
-                {object.value}
-              </button>
-            ))}
-          </article>
-        )}
-      </section>
-      {endGame && <p>Your result is : {score}/2</p>}
+          )}
+        </section>
+      ) : (
+        <article className="final_result">
+          <Image src={Logo} alt="logo dam IT" className="logo_end" />
+          <h3>Your result is : {finalScore}/2</h3>
+          <p>For your information :</p>
+          <div className="info_card">
+            <p>Question I : {firstQuestion?.mission}</p>
+            <p>Answer I : {firstAnswer}</p>
+            <p>More : {firstQuestion?.precision}</p>
+          </div>
+          <div className="info_card">
+            <p>Question II : {firstQuestion?.mission}</p>
+            <p>Answer II : {firstAnswer}</p>
+            <p>More : {firstQuestion?.precision}</p>
+          </div>
+        </article>
+      )}
     </>
   );
 }
