@@ -91,6 +91,23 @@ a {
   filter: drop-shadow(0 0 2.5em #ffd700);
 }
 
+.answer_zone {
+  flex-direction: column;
+  justify-content: space-around;
+  height: 29vh;
+  display: flex;
+  align-items: center;
+  margin-top: 2em;
+}
+
+.solutions {
+  width: 10em;
+  border: solid 0.6px #2e8b5757;
+  background-color: #fdfcf9;
+  border-radius: 8px;
+  padding: 10px;
+}
+
 /* @keyframes logo-spin {
   from {
     transform: rotate(0deg);
