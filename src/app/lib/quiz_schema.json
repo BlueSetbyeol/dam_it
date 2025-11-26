@@ -1,0 +1,207 @@
+{
+  "quiz_room": [
+    {
+      "id": 1,
+      "room_nd": 1
+    },
+    {
+      "id": 2,
+      "room_nd": 8
+    },
+    {
+      "id": 3,
+      "room_nd": 13
+    },
+    {
+      "id": 4,
+      "room_nd": 23
+    },
+    {
+      "id": 5,
+      "room_nd": 28
+    }
+  ],
+
+  "object_to_sort": [
+    {
+      "id": 1,
+      "name": "computer",
+      "image": "",
+      "mission": "",
+      "answers": [{ "first": "" }, { "second": "" }, { "third": "" }],
+      "good_answer": [""],
+      "challenge_type": "sort",
+      "precision": ""
+    },
+    {
+      "id": 2,
+      "name": "computer",
+      "image": "",
+      "mission": "",
+      "answers": [{ "first": "" }, { "second": "" }, { "third": "" }],
+      "good_answer": [""],
+      "challenge_type": "sort",
+      "precision": ""
+    },
+    {
+      "id": 3,
+      "name": "computer",
+      "image": "",
+      "mission": "",
+      "answers": [{ "first": "" }, { "second": "" }, { "third": "" }],
+      "good_answer": [""],
+      "challenge_type": "sort",
+      "precision": ""
+    },
+    {
+      "id": 4,
+      "name": "computer",
+      "image": "",
+      "mission": "",
+      "answers": [{ "first": "" }, { "second": "" }, { "third": "" }],
+      "good_answer": [""],
+      "challenge_type": "sort",
+      "precision": ""
+    },
+    {
+      "id": 5,
+      "name": "computer",
+      "image": "",
+      "mission": "",
+      "answers": [{ "first": "" }, { "second": "" }, { "third": "" }],
+      "good_answer": [""],
+      "challenge_type": "sort",
+      "precision": ""
+    },
+    {
+      "id": 6,
+      "name": "computer",
+      "image": "",
+      "mission": "",
+      "answers": [{ "first": "" }, { "second": "" }, { "third": "" }],
+      "good_answer": [""],
+      "challenge_type": "sort",
+      "precision": ""
+    },
+    {
+      "id": 7,
+      "name": "computer",
+      "image": "",
+      "mission": "",
+      "answers": [{ "first": "" }, { "second": "" }, { "third": "" }],
+      "good_answer": [""],
+      "challenge_type": "sort",
+      "precision": ""
+    },
+    {
+      "id": 8,
+      "name": "computer",
+      "image": "",
+      "mission": "",
+      "answers": [{ "first": "" }, { "second": "" }, { "third": "" }],
+      "good_answer": [""],
+      "challenge_type": "sort",
+      "precision": ""
+    }
+  ],
+  "object_to_repair": [
+    {
+      "id": 1,
+      "name": "computer",
+      "image": "",
+      "mission": "",
+      "answers": [{ "first": "" }, { "second": "" }, { "third": "" }],
+      "good_answer": [""],
+      "challenge_type": "sort",
+      "precision": ""
+    },
+    {
+      "id": 2,
+      "name": "computer",
+      "image": "",
+      "mission": "",
+      "answers": [{ "first": "" }, { "second": "" }, { "third": "" }],
+      "good_answer": [""],
+      "challenge_type": "sort",
+      "precision": ""
+    },
+    {
+      "id": 3,
+      "name": "computer",
+      "image": "",
+      "mission": "",
+      "answers": [{ "first": "" }, { "second": "" }, { "third": "" }],
+      "good_answer": [""],
+      "challenge_type": "sort",
+      "precision": ""
+    },
+    {
+      "id": 4,
+      "name": "computer",
+      "image": "",
+      "mission": "",
+      "answers": [{ "first": "" }, { "second": "" }, { "third": "" }],
+      "good_answer": [""],
+      "challenge_type": "sort",
+      "precision": ""
+    },
+    {
+      "id": 5,
+      "name": "computer",
+      "image": "",
+      "mission": "",
+      "answers": [{ "first": "" }, { "second": "" }, { "third": "" }],
+      "good_answer": [""],
+      "challenge_type": "sort",
+      "precision": ""
+    },
+    {
+      "id": 6,
+      "name": "computer",
+      "image": "",
+      "mission": "",
+      "answers": [{ "first": "" }, { "second": "" }, { "third": "" }],
+      "good_answer": [""],
+      "challenge_type": "sort",
+      "precision": ""
+    },
+    {
+      "id": 7,
+      "name": "computer",
+      "image": "",
+      "mission": "",
+      "answers": [{ "first": "" }, { "second": "" }, { "third": "" }],
+      "good_answer": [""],
+      "challenge_type": "sort",
+      "precision": ""
+    },
+    {
+      "id": 8,
+      "name": "computer",
+      "image": "",
+      "mission": "",
+      "answers": [{ "first": "" }, { "second": "" }, { "third": "" }],
+      "good_answer": [""],
+      "challenge_type": "sort",
+      "precision": ""
+    }
+  ],
+  "room_questions": [{ "quiz_room_id": "1", "question_to_ask_id": "1" }],
+  "question_to_ask": [
+    {
+      "quiz_room_id": "1",
+      "object_to_sort_id": "1",
+      "object_to_repair_id": "1"
+    },
+    {
+      "quiz_room_id": "2",
+      "object_to_sort_id": "2",
+      "object_to_repair_id": "2"
+    },
+    {
+      "quiz_room_id": "3",
+      "object_to_sort_id": "3",
+      "object_to_repair_id": "3"
+    }
+  ]
+}

@@ -1,0 +1,1384 @@
+{
+  "quiz_room": [
+    {
+      "id": 1,
+      "room_nd": 1
+    },
+    {
+      "id": 2,
+      "room_nd": 8
+    },
+    {
+      "id": 3,
+      "room_nd": 13
+    },
+    {
+      "id": 4,
+      "room_nd": 23
+    },
+    {
+      "id": 5,
+      "room_nd": 28
+    }
+  ],
+  "object_to_sort": [
+    {
+      "id": 1,
+      "name": "Broken Bluetooth speaker",
+      "image": "",
+      "mission": "Your old Bluetooth speaker no longer turns on. How should you dispose of it?",
+      "answers": [
+        { "name": "first", "value": "Throw it in the household trash" },
+        {
+          "name": "second",
+          "value": "Take it to an electronic waste collection point"
+        },
+        { "name": "third", "value": "Leave it outside for someone to take" }
+      ],
+      "good_answer": ["second"],
+      "challenge_type": "sort",
+      "precision": "Electronic devices contain batteries, metals, and plastics that must be recycled properly. Always bring them to an official e-waste collection point."
+    },
+    {
+      "id": 2,
+      "name": "Piles & batteries",
+      "image": "",
+      "mission": "You find a bag full of old batteries at home.",
+      "answers": [
+        { "name": "first", "value": "Bring them to a battery recycling box" },
+        { "name": "second", "value": "Put them in the recycling bin" },
+        { "name": "third", "value": "Throw them away with normal trash" }
+      ],
+      "good_answer": ["first"],
+      "challenge_type": "sort",
+      "precision": "Batteries contain toxic chemicals and can pollute water and soil. They must be placed in special battery recycling containers found in shops and supermarkets."
+    },
+    {
+      "id": 3,
+      "name": "Broken cables",
+      "image": "",
+      "mission": "You have a pile of broken phone and USB cables.",
+      "answers": [
+        { "name": "first", "value": "Burn them to recover copper" },
+        { "name": "second", "value": "Throw them in the plastic bin" },
+        { "name": "third", "value": "Recycle them with electronic waste" }
+      ],
+      "good_answer": ["third"],
+      "challenge_type": "sort",
+      "precision": "Cables contain valuable metals like copper. They must be treated in proper e-waste facilities to recover materials and reduce pollution."
+    },
+    {
+      "id": 4,
+      "name": "Old phone collection",
+      "image": "",
+      "mission": "Your parents want to get rid of some old phones.",
+      "answers": [
+        { "name": "first", "value": "Put them in the glass recycling bin" },
+        {
+          "name": "second",
+          "value": "Donate them or recycle them at a collection point"
+        },
+        { "name": "third", "value": "Keep them forever in a drawer" }
+      ],
+      "good_answer": ["second"],
+      "challenge_type": "sort",
+      "precision": "Phones contain gold, copper, and rare earths that can be reused. Recycling or donating them avoids unnecessary extraction of new materials."
+    },
+    {
+      "id": 5,
+      "name": "Damaged USB keys",
+      "image": "",
+      "mission": "Your USB keys no longer work at all.",
+      "answers": [
+        {
+          "name": "first",
+          "value": "Dispose of them in electronic waste bins"
+        },
+        { "name": "second", "value": "Throw them in the paper recycling bin" },
+        {
+          "name": "third",
+          "value": "Leave them somewhere in case someone fixes them"
+        }
+      ],
+      "good_answer": ["first"],
+      "challenge_type": "sort",
+      "precision": "USB keys contain electronic circuits which must be processed with other small electronic waste, not in regular recycling bins."
+    },
+    {
+      "id": 6,
+      "name": "Old TV",
+      "image": "",
+      "mission": "You need to get rid of an old TV that no longer works.",
+      "answers": [
+        { "name": "first", "value": "Break it into pieces and throw it away" },
+        { "name": "second", "value": "Put it on the sidewalk" },
+        { "name": "third", "value": "Take it to a recycling center" }
+      ],
+      "good_answer": ["third"],
+      "challenge_type": "sort",
+      "precision": "TVs contain hazardous substances like lead and mercury. They must be processed in special facilities to avoid environmental contamination."
+    },
+    {
+      "id": 7,
+      "name": "Outdated smartwatch",
+      "image": "",
+      "mission": "Your smartwatch is broken and cannot be repaired.",
+      "answers": [
+        {
+          "name": "first",
+          "value": "Throw it in the compost because it's small"
+        },
+        { "name": "second", "value": "Recycle it with small electronics" },
+        {
+          "name": "third",
+          "value": "Remove the strap and recycle it separately in plastic bins"
+        }
+      ],
+      "good_answer": ["second"],
+      "challenge_type": "sort",
+      "precision": "Smartwatches contain batteries, sensors, and electronic circuits. They must be recycled with other small electronic devices."
+    },
+    {
+      "id": 8,
+      "name": "Ink cartridges",
+      "image": "",
+      "mission": "Your printer’s ink cartridges are empty.",
+      "answers": [
+        {
+          "name": "first",
+          "value": "Recycle them at a cartridge collection point"
+        },
+        {
+          "name": "second",
+          "value": "Throw them in the plastic recycling bin"
+        },
+        { "name": "third", "value": "Put them in the regular trash" }
+      ],
+      "good_answer": ["first"],
+      "challenge_type": "sort",
+      "precision": "Ink cartridges contain chemicals that must be handled carefully. Many shops provide special collection boxes for cartridges."
+    },
+    {
+      "id": 9,
+      "name": "Electronic waste box",
+      "image": "",
+      "mission": "You want to dispose of an old mouse, a keyboard, and broken headphones.",
+      "answers": [
+        { "name": "first", "value": "Throw them in the household trash" },
+        {
+          "name": "second",
+          "value": "Take them to an electronic recycling point"
+        },
+        { "name": "third", "value": "Burn them in the garden to save space" }
+      ],
+      "good_answer": ["second"],
+      "challenge_type": "sort",
+      "precision": "Small electronic devices must be recycled at specialized collection points. They contain metals and chemicals that are harmful if thrown away improperly, but valuable if recycled correctly."
+    },
+    {
+      "id": 10,
+      "name": "Old smartphone charger",
+      "image": "",
+      "mission": "You found several old chargers at home, but you don’t know what to do with them.",
+      "answers": [
+        { "name": "first", "value": "Throw them in the normal trash" },
+        {
+          "name": "second",
+          "value": "Bring them to an e-waste collection point"
+        },
+        { "name": "third", "value": "Keep them forever in a drawer" }
+      ],
+      "good_answer": ["second"],
+      "challenge_type": "sort",
+      "precision": "Old chargers contain copper, plastic and electronic components that can be recycled. Never throw them in regular trash: take them to a specialized electronic waste collection point."
+    },
+    {
+      "id": 16,
+      "name": "Forgotten devices",
+      "image": "",
+      "mission": "You find old phones and MP3 players in a box at home.",
+      "answers": [
+        {
+          "name": "first",
+          "value": "Leave them in the box for another 10 years"
+        },
+        { "name": "second", "value": "Throw the entire box in the trash" },
+        {
+          "name": "third",
+          "value": "Recycle them properly at an e-waste point"
+        }
+      ],
+      "good_answer": ["third"],
+      "challenge_type": "sort",
+      "precision": "Storing unused electronics contributes to hidden e-waste. Recycling recovers valuable materials like gold, copper, and rare metals, reducing mining and pollution."
+    }
+  ],
+  "object_to_repair": [
+    {
+      "id": 1,
+      "name": "Keyboard not responding",
+      "image": "",
+      "mission": "Your laptop keyboard doesn't respond on certain keys.",
+      "answers": [
+        {
+          "name": "first",
+          "value": "Clean under the keys and check keyboard drivers"
+        },
+        { "name": "second", "value": "Replace the entire laptop" },
+        { "name": "third", "value": "Smash the keyboard hoping it will fix it" }
+      ],
+      "good_answer": ["first"],
+      "challenge_type": "repair",
+      "precision": "Dirt or outdated drivers are often the cause. Cleaning or reinstalling drivers is cheaper and better for the environment."
+    },
+    {
+      "id": 2,
+      "name": "Battery draining fast",
+      "image": "",
+      "mission": "Your phone battery drains too quickly.",
+      "answers": [
+        { "name": "first", "value": "Buy the newest smartphone" },
+        { "name": "second", "value": "Replace the battery" },
+        { "name": "third", "value": "Use the phone only while plugged in" }
+      ],
+      "good_answer": ["second"],
+      "challenge_type": "repair",
+      "precision": "Replacing the battery is one of the simplest and most effective ways to extend the life of a smartphone. Have it done at a specialist shop."
+    },
+    {
+      "id": 3,
+      "name": "Noisy laptop fan",
+      "image": "",
+      "mission": "Your laptop is extremely noisy even during light use.",
+      "answers": [
+        { "name": "first", "value": "Stop using it completely" },
+        { "name": "second", "value": "Clean the fans and vents" },
+        { "name": "third", "value": "Cover the laptop to muffle the noise" }
+      ],
+      "good_answer": ["third"],
+      "challenge_type": "repair",
+      "precision": "Dust buildup is a major cause of noise and overheating. Cleaning extends the laptop's lifespan and improves performance.The website https://fr.ifixit.com/ provides access to excellent tutorials on methods and best practices for repairing electronic devices."
+    },
+    {
+      "id": 4,
+      "name": "Cracked smartphone screen",
+      "image": "",
+      "mission": "Your smartphone screen is cracked but still usable.",
+      "answers": [
+        { "name": "first", "value": "Replace the screen" },
+        { "name": "second", "value": "Buy a new phone immediately" },
+        { "name": "third", "value": "Ignore the cracks until it stops working" }
+      ],
+      "good_answer": ["first"],
+      "challenge_type": "repair",
+      "precision": "A screen replacement is cheaper and avoids unnecessary waste. Most phones can be repaired easily using guides. The website https://fr.ifixit.com/ provides access to excellent tutorials on methods and best practices for repairing electronic devices. Or have it done at a specialist shop."
+    },
+    {
+      "id": 5,
+      "name": "Old computer running slow",
+      "image": "",
+      "mission": "Your computer is getting slow after years of use.",
+      "answers": [
+        { "name": "first", "value": "Throw it away" },
+        { "name": "second", "value": "Add RAM or switch to an SSD" },
+        { "name": "third", "value": "Install 50 performance-boosting apps" }
+      ],
+      "good_answer": ["second"],
+      "challenge_type": "repair",
+      "precision": "Upgrading RAM or moving to a solid-state drive dramatically improves performance and extends lifespan."
+    },
+    {
+      "id": 6,
+      "name": "Faulty headphone jack",
+      "image": "",
+      "mission": "Your laptop’s headphone jack sometimes disconnects.",
+      "answers": [
+        { "name": "first", "value": "Stop listening to audio entirely" },
+        { "name": "second", "value": "Replace the entire laptop" },
+        {
+          "name": "third",
+          "value": "Use a USB sound card or Bluetooth adapter"
+        }
+      ],
+      "good_answer": ["third"],
+      "challenge_type": "repair",
+      "precision": "USB or Bluetooth adapters are cheap, effective, and avoid having to replace a fully functional machine."
+    },
+    {
+      "id": 7,
+      "name": "PC overheating",
+      "image": "",
+      "mission": "Your computer gets extremely hot during gaming or video editing.",
+      "answers": [
+        {
+          "name": "first",
+          "value": "Replace the thermal paste and clean the fans"
+        },
+        { "name": "second", "value": "Place ice packs on the PC" },
+        { "name": "third", "value": "Buy a brand new gaming PC" }
+      ],
+      "good_answer": ["first"],
+      "challenge_type": "repair",
+      "precision": "Thermal paste wears out after several years. Replacing it improves cooling efficiency and prevents hardware damage. The website https://fr.ifixit.com/ provides access to excellent tutorials on methods and best practices for repairing electronic devices."
+    },
+    {
+      "id": 8,
+      "name": "Broken laptop hinge",
+      "image": "",
+      "mission": "The hinge on your laptop is cracked and difficult to open.",
+      "answers": [
+        { "name": "first", "value": "Force it open every time" },
+        { "name": "second", "value": "Repair or replace the hinge" },
+        { "name": "third", "value": "Buy a new laptop" }
+      ],
+      "good_answer": ["second"],
+      "challenge_type": "repair",
+      "precision": "A hinge is a mechanical part that can be easily replaced. Replacing it avoids premature disposal of a fully working device. The website https://fr.ifixit.com/ provides access to excellent tutorials on methods and best practices for repairing electronic devices."
+    },
+    {
+      "id": 9,
+      "name": "Batteries dead",
+      "image": "",
+      "mission": "This computer is just two years old and still performs well for its previous use.",
+      "answers": [
+        { "name": "first", "value": "Change the batteries" },
+        { "name": "second", "value": "Buy a new PC" },
+        { "name": "third", "value": "" }
+      ],
+      "good_answer": ["first"],
+      "challenge_type": "repair",
+      "precision": "Replacing the battery is the best possible solution, especially if the computer is still usable. Replacing the battery is a relatively simple task. The website https://fr.ifixit.com/ provides access to excellent tutorials on methods and best practices for repairing electronic devices."
+    },
+    {
+      "id": 10,
+      "name": "Lack of storage",
+      "image": "",
+      "mission": "This computer is just two years old and still performs well for its previous use.It just needs a little more space.",
+      "answers": [
+        { "name": "first", "value": "Purchase cloud space" },
+        { "name": "second", "value": "Purchase and add new disks" },
+        { "name": "third", "value": "Purchase a new PC" }
+      ],
+      "good_answer": ["second"],
+      "challenge_type": "repair",
+      "precision": "Buying cloud storage may seem more attractive in the short term, but it ends up costing more for you and the planet. Buying a new computer is not at all attractive from any perspective. The best solution is still to buy a hard drive, which can be internal or external (USB)."
+    },
+    {
+      "id": 11,
+      "name": "Slow smartphone",
+      "image": "",
+      "mission": "Your phone is getting slow, but physically it works perfectly. What should you do?",
+      "answers": [
+        {
+          "name": "first",
+          "value": "Use two phones: one for apps, one for calls"
+        },
+        {
+          "name": "second",
+          "value": "Buy the newest smartphone on the market"
+        },
+        {
+          "name": "third",
+          "value": "Clean unused apps and perform a factory reset"
+        }
+      ],
+      "good_answer": ["third"],
+      "challenge_type": "repair",
+      "precision": "Before replacing a phone, always try software cleaning. Removing apps, clearing cache, or doing a factory reset often restores performance. Buying a new phone generates unnecessary CO₂ and e-waste."
+    },
+    {
+      "id": 12,
+      "name": "Broken laptop screen",
+      "image": "",
+      "mission": "Your laptop screen is cracked after a fall, but everything else works fine.",
+      "answers": [
+        {
+          "name": "first",
+          "value": "Throw it away and use a friend's computer"
+        },
+        { "name": "second", "value": "Buy a new laptop" },
+        { "name": "third", "value": "Replace only the screen" }
+      ],
+      "good_answer": ["third"],
+      "challenge_type": "repair",
+      "precision": "Most laptop screens can be replaced for a low cost and greatly extend the device's lifespan. Throwing away or replacing the entire laptop would create avoidable electronic waste. The website https://fr.ifixit.com/ provides access to excellent tutorials on methods and best practices for repairing electronic devices."
+    },
+    {
+      "id": 13,
+      "name": "Old but functional PC",
+      "image": "",
+      "mission": "You have a 7-year-old PC that still works, but struggles with modern applications.",
+      "answers": [
+        {
+          "name": "first",
+          "value": "Install a lightweight operating system (Linux, etc.)"
+        },
+        { "name": "second", "value": "Send it to recycling immediately" },
+        { "name": "third", "value": "Buy a new PC" }
+      ],
+      "good_answer": ["first"],
+      "challenge_type": "repair",
+      "precision": "Older computers can gain several extra years of life by installing lighter systems like Linux Mint, Xubuntu, or ChromeOS Flex. Recycling should come only when useful upgrades are no longer possible."
+    },
+    {
+      "id": 14,
+      "name": "Overheating PC",
+      "image": "",
+      "mission": "Your computer often overheats and slows down when you use it.",
+      "answers": [
+        {
+          "name": "first",
+          "value": "Place the PC in the fridge to cool it down"
+        },
+        {
+          "name": "second",
+          "value": "Clean the fans and replace the thermal paste"
+        },
+        { "name": "third", "value": "Buy a more powerful PC" }
+      ],
+      "good_answer": ["second"],
+      "challenge_type": "repair",
+      "precision": "Dust and old thermal paste are the most common causes of overheating. Cleaning the fans or applying new thermal paste drastically improves performance and extends lifespan without generating waste.The website https://fr.ifixit.com/ provides access to excellent tutorials on methods and best practices for repairing electronic devices."
+    },
+    {
+      "id": 15,
+      "name": "Wi-Fi problems",
+      "image": "",
+      "mission": "Your computer can’t connect properly to Wi-Fi, but works great otherwise.",
+      "answers": [
+        { "name": "first", "value": "Buy a new computer with better Wi-Fi" },
+        { "name": "second", "value": "Buy a USB Wi-Fi adapter" },
+        { "name": "third", "value": "Use mobile data permanently" }
+      ],
+      "good_answer": ["second"],
+      "challenge_type": "repair",
+      "precision": "USB Wi-Fi adapters are inexpensive and extend the life of many computers. Replacing the entire machine would be wasteful and create unnecessary environmental impact."
+    },
+    {
+      "id": 16,
+      "name": "Slow school computer",
+      "image": "",
+      "mission": "Your school computer is slow, but the IT department says hardware replacement isn’t planned.",
+      "answers": [
+        {
+          "name": "first",
+          "value": "Abandon the PC and only use your smartphone"
+        },
+        { "name": "second", "value": "Complain loudly until they buy new PCs" },
+        {
+          "name": "third",
+          "value": "Install a lightweight browser and disable unnecessary extensions"
+        }
+      ],
+      "good_answer": ["third"],
+      "challenge_type": "repair",
+      "precision": "Optimizing software, removing unnecessary extensions, and using lightweight tools greatly improves performance without requiring new hardware. This helps extend the life of shared school computers."
+    },
+    {
+      "id": 17,
+      "name": "Printer not working",
+      "image": "",
+      "mission": "Your printer refuses to print, even though it turns on normally.",
+      "answers": [
+        { "name": "first", "value": "Check drivers and clean the print heads" },
+        { "name": "second", "value": "Throw it away immediately" },
+        { "name": "third", "value": "Buy a brand new printer" }
+      ],
+      "good_answer": ["first"],
+      "challenge_type": "repair",
+      "precision": "Most printer failures come from clogged print heads or outdated drivers. Cleaning or updating them is often enough to fix the issue without replacing the printer.The website https://fr.ifixit.com/ provides access to excellent tutorials on methods and best practices for repairing electronic devices."
+    },
+    {
+      "id": 18,
+      "name": "Second-hand opportunity",
+      "image": "",
+      "mission": "You need a laptop for basic tasks (documents, emails, streaming).",
+      "answers": [
+        { "name": "first", "value": "Buy the latest high-end model" },
+        { "name": "second", "value": "Buy a refurbished laptop" },
+        {
+          "name": "third",
+          "value": "Use an old computer from a friend without checking its condition"
+        }
+      ],
+      "good_answer": ["second"],
+      "challenge_type": "repair",
+      "precision": "Refurbished devices reduce environmental impact and provide excellent quality at lower cost. Buying a high-end machine for basic tasks wastes resources unnecessarily."
+    },
+    {
+      "id": 19,
+      "name": "Electronic toys",
+      "image": "",
+      "mission": "Your younger sister’s old electronic toys no longer turn on.",
+      "answers": [
+        { "name": "first", "value": "Buy entirely new toys" },
+        { "name": "second", "value": "Throw them away" },
+        { "name": "third", "value": "Try replacing the batteries" }
+      ],
+      "good_answer": ["third"],
+      "challenge_type": "repair",
+      "precision": "Most battery-powered toys simply need fresh batteries. Repairing or maintaining them avoids unnecessary waste and allows them to be reused or donated."
+    },
+    {
+      "id": 20,
+      "name": "Dusty desktop PC",
+      "image": "",
+      "mission": "A desktop PC is very loud and seems to struggle even with simple tasks.",
+      "answers": [
+        {
+          "name": "first",
+          "value": "Open it and remove dust from fans and vents"
+        },
+        { "name": "second", "value": "Throw it out because it’s too old" },
+        { "name": "third", "value": "Install random softwares to 'boost' it" }
+      ],
+      "good_answer": ["first"],
+      "challenge_type": "repair",
+      "precision": "Dust buildup drastically slows computers and increases noise. Cleaning inside the case often restores performance. Avoid 'boost' softwares: they rarely help and often harm performance. The website https://fr.ifixit.com/ provides access to excellent tutorials on methods and best practices for repairing electronic devices."
+    },
+    {
+      "id": 21,
+      "name": "Broken HDMI port",
+      "image": "",
+      "mission": "Your laptop’s HDMI port is broken and you can't connect it to a screen.",
+      "answers": [
+        {
+          "name": "first",
+          "value": "Use a USB-C or USB adapter as an alternative"
+        },
+        { "name": "second", "value": "Replace the entire laptop" },
+        { "name": "third", "value": "Stop using an external monitor forever" }
+      ],
+      "good_answer": ["first"],
+      "challenge_type": "repair",
+      "precision": "Most laptops offer multiple connection options (USB-C, DisplayPort adapters, docking stations). Adapters cost little and avoid replacing a functional laptop."
+    }
+  ],
+  "question_to_ask": [
+    {
+      "quiz_room_id": "1",
+      "object_to_sort_id": "1",
+      "object_to_repair_id": "1"
+    },
+    {
+      "quiz_room_id": "2",
+      "object_to_sort_id": "1",
+      "object_to_repair_id": "2"
+    },
+    {
+      "quiz_room_id": "3",
+      "object_to_sort_id": "1",
+      "object_to_repair_id": "3"
+    },
+    {
+      "quiz_room_id": "4",
+      "object_to_sort_id": "1",
+      "object_to_repair_id": "4"
+    },
+    {
+      "quiz_room_id": "5",
+      "object_to_sort_id": "1",
+      "object_to_repair_id": "5"
+    },
+    {
+      "quiz_room_id": "1",
+      "object_to_sort_id": "1",
+      "object_to_repair_id": "6"
+    },
+    {
+      "quiz_room_id": "2",
+      "object_to_sort_id": "1",
+      "object_to_repair_id": "7"
+    },
+    {
+      "quiz_room_id": "3",
+      "object_to_sort_id": "1",
+      "object_to_repair_id": "8"
+    },
+    {
+      "quiz_room_id": "4",
+      "object_to_sort_id": "1",
+      "object_to_repair_id": "9"
+    },
+    {
+      "quiz_room_id": "5",
+      "object_to_sort_id": "1",
+      "object_to_repair_id": "10"
+    },
+    {
+      "quiz_room_id": "1",
+      "object_to_sort_id": "1",
+      "object_to_repair_id": "11"
+    },
+    {
+      "quiz_room_id": "2",
+      "object_to_sort_id": "1",
+      "object_to_repair_id": "12"
+    },
+    {
+      "quiz_room_id": "3",
+      "object_to_sort_id": "1",
+      "object_to_repair_id": "13"
+    },
+    {
+      "quiz_room_id": "4",
+      "object_to_sort_id": "1",
+      "object_to_repair_id": "14"
+    },
+    {
+      "quiz_room_id": "5",
+      "object_to_sort_id": "1",
+      "object_to_repair_id": "15"
+    },
+    {
+      "quiz_room_id": "1",
+      "object_to_sort_id": "1",
+      "object_to_repair_id": "16"
+    },
+    {
+      "quiz_room_id": "2",
+      "object_to_sort_id": "1",
+      "object_to_repair_id": "17"
+    },
+    {
+      "quiz_room_id": "3",
+      "object_to_sort_id": "1",
+      "object_to_repair_id": "18"
+    },
+    {
+      "quiz_room_id": "4",
+      "object_to_sort_id": "1",
+      "object_to_repair_id": "19"
+    },
+    {
+      "quiz_room_id": "5",
+      "object_to_sort_id": "1",
+      "object_to_repair_id": "20"
+    },
+    {
+      "quiz_room_id": "1",
+      "object_to_sort_id": "1",
+      "object_to_repair_id": "21"
+    },
+    {
+      "quiz_room_id": "2",
+      "object_to_sort_id": "2",
+      "object_to_repair_id": "1"
+    },
+    {
+      "quiz_room_id": "3",
+      "object_to_sort_id": "2",
+      "object_to_repair_id": "2"
+    },
+    {
+      "quiz_room_id": "4",
+      "object_to_sort_id": "2",
+      "object_to_repair_id": "3"
+    },
+    {
+      "quiz_room_id": "5",
+      "object_to_sort_id": "2",
+      "object_to_repair_id": "4"
+    },
+    {
+      "quiz_room_id": "1",
+      "object_to_sort_id": "2",
+      "object_to_repair_id": "5"
+    },
+    {
+      "quiz_room_id": "2",
+      "object_to_sort_id": "2",
+      "object_to_repair_id": "6"
+    },
+    {
+      "quiz_room_id": "3",
+      "object_to_sort_id": "2",
+      "object_to_repair_id": "7"
+    },
+    {
+      "quiz_room_id": "4",
+      "object_to_sort_id": "2",
+      "object_to_repair_id": "8"
+    },
+    {
+      "quiz_room_id": "5",
+      "object_to_sort_id": "2",
+      "object_to_repair_id": "9"
+    },
+    {
+      "quiz_room_id": "1",
+      "object_to_sort_id": "2",
+      "object_to_repair_id": "10"
+    },
+    {
+      "quiz_room_id": "2",
+      "object_to_sort_id": "2",
+      "object_to_repair_id": "11"
+    },
+    {
+      "quiz_room_id": "3",
+      "object_to_sort_id": "2",
+      "object_to_repair_id": "12"
+    },
+    {
+      "quiz_room_id": "4",
+      "object_to_sort_id": "2",
+      "object_to_repair_id": "13"
+    },
+    {
+      "quiz_room_id": "5",
+      "object_to_sort_id": "2",
+      "object_to_repair_id": "14"
+    },
+    {
+      "quiz_room_id": "1",
+      "object_to_sort_id": "2",
+      "object_to_repair_id": "15"
+    },
+    {
+      "quiz_room_id": "2",
+      "object_to_sort_id": "2",
+      "object_to_repair_id": "16"
+    },
+    {
+      "quiz_room_id": "3",
+      "object_to_sort_id": "2",
+      "object_to_repair_id": "17"
+    },
+    {
+      "quiz_room_id": "4",
+      "object_to_sort_id": "2",
+      "object_to_repair_id": "18"
+    },
+    {
+      "quiz_room_id": "5",
+      "object_to_sort_id": "2",
+      "object_to_repair_id": "19"
+    },
+    {
+      "quiz_room_id": "1",
+      "object_to_sort_id": "2",
+      "object_to_repair_id": "20"
+    },
+    {
+      "quiz_room_id": "2",
+      "object_to_sort_id": "2",
+      "object_to_repair_id": "21"
+    },
+    {
+      "quiz_room_id": "3",
+      "object_to_sort_id": "3",
+      "object_to_repair_id": "1"
+    },
+    {
+      "quiz_room_id": "4",
+      "object_to_sort_id": "3",
+      "object_to_repair_id": "2"
+    },
+    {
+      "quiz_room_id": "5",
+      "object_to_sort_id": "3",
+      "object_to_repair_id": "3"
+    },
+    {
+      "quiz_room_id": "1",
+      "object_to_sort_id": "3",
+      "object_to_repair_id": "4"
+    },
+    {
+      "quiz_room_id": "2",
+      "object_to_sort_id": "3",
+      "object_to_repair_id": "5"
+    },
+    {
+      "quiz_room_id": "3",
+      "object_to_sort_id": "3",
+      "object_to_repair_id": "6"
+    },
+    {
+      "quiz_room_id": "4",
+      "object_to_sort_id": "3",
+      "object_to_repair_id": "7"
+    },
+    {
+      "quiz_room_id": "5",
+      "object_to_sort_id": "3",
+      "object_to_repair_id": "8"
+    },
+    {
+      "quiz_room_id": "1",
+      "object_to_sort_id": "3",
+      "object_to_repair_id": "9"
+    },
+    {
+      "quiz_room_id": "2",
+      "object_to_sort_id": "3",
+      "object_to_repair_id": "10"
+    },
+    {
+      "quiz_room_id": "3",
+      "object_to_sort_id": "3",
+      "object_to_repair_id": "11"
+    },
+    {
+      "quiz_room_id": "4",
+      "object_to_sort_id": "3",
+      "object_to_repair_id": "12"
+    },
+    {
+      "quiz_room_id": "5",
+      "object_to_sort_id": "3",
+      "object_to_repair_id": "13"
+    },
+    {
+      "quiz_room_id": "1",
+      "object_to_sort_id": "3",
+      "object_to_repair_id": "14"
+    },
+    {
+      "quiz_room_id": "2",
+      "object_to_sort_id": "3",
+      "object_to_repair_id": "15"
+    },
+    {
+      "quiz_room_id": "3",
+      "object_to_sort_id": "3",
+      "object_to_repair_id": "16"
+    },
+    {
+      "quiz_room_id": "4",
+      "object_to_sort_id": "3",
+      "object_to_repair_id": "17"
+    },
+    {
+      "quiz_room_id": "5",
+      "object_to_sort_id": "3",
+      "object_to_repair_id": "18"
+    },
+    {
+      "quiz_room_id": "1",
+      "object_to_sort_id": "3",
+      "object_to_repair_id": "19"
+    },
+    {
+      "quiz_room_id": "2",
+      "object_to_sort_id": "3",
+      "object_to_repair_id": "20"
+    },
+    {
+      "quiz_room_id": "3",
+      "object_to_sort_id": "3",
+      "object_to_repair_id": "21"
+    },
+    {
+      "quiz_room_id": "4",
+      "object_to_sort_id": "4",
+      "object_to_repair_id": "1"
+    },
+    {
+      "quiz_room_id": "5",
+      "object_to_sort_id": "4",
+      "object_to_repair_id": "2"
+    },
+    {
+      "quiz_room_id": "1",
+      "object_to_sort_id": "4",
+      "object_to_repair_id": "3"
+    },
+    {
+      "quiz_room_id": "2",
+      "object_to_sort_id": "4",
+      "object_to_repair_id": "4"
+    },
+    {
+      "quiz_room_id": "3",
+      "object_to_sort_id": "4",
+      "object_to_repair_id": "5"
+    },
+    {
+      "quiz_room_id": "4",
+      "object_to_sort_id": "4",
+      "object_to_repair_id": "6"
+    },
+    {
+      "quiz_room_id": "5",
+      "object_to_sort_id": "4",
+      "object_to_repair_id": "7"
+    },
+    {
+      "quiz_room_id": "1",
+      "object_to_sort_id": "4",
+      "object_to_repair_id": "8"
+    },
+    {
+      "quiz_room_id": "2",
+      "object_to_sort_id": "4",
+      "object_to_repair_id": "9"
+    },
+    {
+      "quiz_room_id": "3",
+      "object_to_sort_id": "4",
+      "object_to_repair_id": "10"
+    },
+    {
+      "quiz_room_id": "4",
+      "object_to_sort_id": "4",
+      "object_to_repair_id": "11"
+    },
+    {
+      "quiz_room_id": "5",
+      "object_to_sort_id": "4",
+      "object_to_repair_id": "12"
+    },
+    {
+      "quiz_room_id": "1",
+      "object_to_sort_id": "4",
+      "object_to_repair_id": "13"
+    },
+    {
+      "quiz_room_id": "2",
+      "object_to_sort_id": "4",
+      "object_to_repair_id": "14"
+    },
+    {
+      "quiz_room_id": "3",
+      "object_to_sort_id": "4",
+      "object_to_repair_id": "15"
+    },
+    {
+      "quiz_room_id": "4",
+      "object_to_sort_id": "4",
+      "object_to_repair_id": "16"
+    },
+    {
+      "quiz_room_id": "5",
+      "object_to_sort_id": "4",
+      "object_to_repair_id": "17"
+    },
+    {
+      "quiz_room_id": "1",
+      "object_to_sort_id": "4",
+      "object_to_repair_id": "18"
+    },
+    {
+      "quiz_room_id": "2",
+      "object_to_sort_id": "4",
+      "object_to_repair_id": "19"
+    },
+    {
+      "quiz_room_id": "3",
+      "object_to_sort_id": "4",
+      "object_to_repair_id": "20"
+    },
+    {
+      "quiz_room_id": "4",
+      "object_to_sort_id": "4",
+      "object_to_repair_id": "21"
+    },
+    {
+      "quiz_room_id": "5",
+      "object_to_sort_id": "5",
+      "object_to_repair_id": "1"
+    },
+    {
+      "quiz_room_id": "1",
+      "object_to_sort_id": "5",
+      "object_to_repair_id": "2"
+    },
+    {
+      "quiz_room_id": "2",
+      "object_to_sort_id": "5",
+      "object_to_repair_id": "3"
+    },
+    {
+      "quiz_room_id": "3",
+      "object_to_sort_id": "5",
+      "object_to_repair_id": "4"
+    },
+    {
+      "quiz_room_id": "4",
+      "object_to_sort_id": "5",
+      "object_to_repair_id": "5"
+    },
+    {
+      "quiz_room_id": "5",
+      "object_to_sort_id": "5",
+      "object_to_repair_id": "6"
+    },
+    {
+      "quiz_room_id": "1",
+      "object_to_sort_id": "5",
+      "object_to_repair_id": "7"
+    },
+    {
+      "quiz_room_id": "2",
+      "object_to_sort_id": "5",
+      "object_to_repair_id": "8"
+    },
+    {
+      "quiz_room_id": "3",
+      "object_to_sort_id": "5",
+      "object_to_repair_id": "9"
+    },
+    {
+      "quiz_room_id": "4",
+      "object_to_sort_id": "5",
+      "object_to_repair_id": "10"
+    },
+    {
+      "quiz_room_id": "5",
+      "object_to_sort_id": "5",
+      "object_to_repair_id": "11"
+    },
+    {
+      "quiz_room_id": "1",
+      "object_to_sort_id": "5",
+      "object_to_repair_id": "12"
+    },
+    {
+      "quiz_room_id": "2",
+      "object_to_sort_id": "5",
+      "object_to_repair_id": "13"
+    },
+    {
+      "quiz_room_id": "3",
+      "object_to_sort_id": "5",
+      "object_to_repair_id": "14"
+    },
+    {
+      "quiz_room_id": "4",
+      "object_to_sort_id": "5",
+      "object_to_repair_id": "15"
+    },
+    {
+      "quiz_room_id": "5",
+      "object_to_sort_id": "5",
+      "object_to_repair_id": "16"
+    },
+    {
+      "quiz_room_id": "1",
+      "object_to_sort_id": "5",
+      "object_to_repair_id": "17"
+    },
+    {
+      "quiz_room_id": "2",
+      "object_to_sort_id": "5",
+      "object_to_repair_id": "18"
+    },
+    {
+      "quiz_room_id": "3",
+      "object_to_sort_id": "5",
+      "object_to_repair_id": "19"
+    },
+    {
+      "quiz_room_id": "4",
+      "object_to_sort_id": "5",
+      "object_to_repair_id": "20"
+    },
+    {
+      "quiz_room_id": "5",
+      "object_to_sort_id": "5",
+      "object_to_repair_id": "21"
+    },
+    {
+      "quiz_room_id": "1",
+      "object_to_sort_id": "6",
+      "object_to_repair_id": "1"
+    },
+    {
+      "quiz_room_id": "2",
+      "object_to_sort_id": "6",
+      "object_to_repair_id": "2"
+    },
+    {
+      "quiz_room_id": "3",
+      "object_to_sort_id": "6",
+      "object_to_repair_id": "3"
+    },
+    {
+      "quiz_room_id": "4",
+      "object_to_sort_id": "6",
+      "object_to_repair_id": "4"
+    },
+    {
+      "quiz_room_id": "5",
+      "object_to_sort_id": "6",
+      "object_to_repair_id": "5"
+    },
+    {
+      "quiz_room_id": "1",
+      "object_to_sort_id": "6",
+      "object_to_repair_id": "6"
+    },
+    {
+      "quiz_room_id": "2",
+      "object_to_sort_id": "6",
+      "object_to_repair_id": "7"
+    },
+    {
+      "quiz_room_id": "3",
+      "object_to_sort_id": "6",
+      "object_to_repair_id": "8"
+    },
+    {
+      "quiz_room_id": "4",
+      "object_to_sort_id": "6",
+      "object_to_repair_id": "9"
+    },
+    {
+      "quiz_room_id": "5",
+      "object_to_sort_id": "6",
+      "object_to_repair_id": "10"
+    },
+    {
+      "quiz_room_id": "1",
+      "object_to_sort_id": "6",
+      "object_to_repair_id": "11"
+    },
+    {
+      "quiz_room_id": "2",
+      "object_to_sort_id": "6",
+      "object_to_repair_id": "12"
+    },
+    {
+      "quiz_room_id": "3",
+      "object_to_sort_id": "6",
+      "object_to_repair_id": "13"
+    },
+    {
+      "quiz_room_id": "4",
+      "object_to_sort_id": "6",
+      "object_to_repair_id": "14"
+    },
+    {
+      "quiz_room_id": "5",
+      "object_to_sort_id": "6",
+      "object_to_repair_id": "15"
+    },
+    {
+      "quiz_room_id": "1",
+      "object_to_sort_id": "6",
+      "object_to_repair_id": "16"
+    },
+    {
+      "quiz_room_id": "2",
+      "object_to_sort_id": "6",
+      "object_to_repair_id": "17"
+    },
+    {
+      "quiz_room_id": "3",
+      "object_to_sort_id": "6",
+      "object_to_repair_id": "18"
+    },
+    {
+      "quiz_room_id": "4",
+      "object_to_sort_id": "6",
+      "object_to_repair_id": "19"
+    },
+    {
+      "quiz_room_id": "5",
+      "object_to_sort_id": "6",
+      "object_to_repair_id": "20"
+    },
+    {
+      "quiz_room_id": "1",
+      "object_to_sort_id": "6",
+      "object_to_repair_id": "21"
+    },
+    {
+      "quiz_room_id": "2",
+      "object_to_sort_id": "7",
+      "object_to_repair_id": "1"
+    },
+    {
+      "quiz_room_id": "3",
+      "object_to_sort_id": "7",
+      "object_to_repair_id": "2"
+    },
+    {
+      "quiz_room_id": "4",
+      "object_to_sort_id": "7",
+      "object_to_repair_id": "3"
+    },
+    {
+      "quiz_room_id": "5",
+      "object_to_sort_id": "7",
+      "object_to_repair_id": "4"
+    },
+    {
+      "quiz_room_id": "1",
+      "object_to_sort_id": "7",
+      "object_to_repair_id": "5"
+    },
+    {
+      "quiz_room_id": "2",
+      "object_to_sort_id": "7",
+      "object_to_repair_id": "6"
+    },
+    {
+      "quiz_room_id": "3",
+      "object_to_sort_id": "7",
+      "object_to_repair_id": "7"
+    },
+    {
+      "quiz_room_id": "4",
+      "object_to_sort_id": "7",
+      "object_to_repair_id": "8"
+    },
+    {
+      "quiz_room_id": "5",
+      "object_to_sort_id": "7",
+      "object_to_repair_id": "9"
+    },
+    {
+      "quiz_room_id": "1",
+      "object_to_sort_id": "7",
+      "object_to_repair_id": "10"
+    },
+    {
+      "quiz_room_id": "2",
+      "object_to_sort_id": "7",
+      "object_to_repair_id": "11"
+    },
+    {
+      "quiz_room_id": "3",
+      "object_to_sort_id": "7",
+      "object_to_repair_id": "12"
+    },
+    {
+      "quiz_room_id": "4",
+      "object_to_sort_id": "7",
+      "object_to_repair_id": "13"
+    },
+    {
+      "quiz_room_id": "5",
+      "object_to_sort_id": "7",
+      "object_to_repair_id": "14"
+    },
+    {
+      "quiz_room_id": "1",
+      "object_to_sort_id": "7",
+      "object_to_repair_id": "15"
+    },
+    {
+      "quiz_room_id": "2",
+      "object_to_sort_id": "7",
+      "object_to_repair_id": "16"
+    },
+    {
+      "quiz_room_id": "3",
+      "object_to_sort_id": "7",
+      "object_to_repair_id": "17"
+    },
+    {
+      "quiz_room_id": "4",
+      "object_to_sort_id": "7",
+      "object_to_repair_id": "18"
+    },
+    {
+      "quiz_room_id": "5",
+      "object_to_sort_id": "7",
+      "object_to_repair_id": "19"
+    },
+    {
+      "quiz_room_id": "1",
+      "object_to_sort_id": "7",
+      "object_to_repair_id": "20"
+    },
+    {
+      "quiz_room_id": "2",
+      "object_to_sort_id": "7",
+      "object_to_repair_id": "21"
+    },
+    {
+      "quiz_room_id": "3",
+      "object_to_sort_id": "8",
+      "object_to_repair_id": "1"
+    },
+    {
+      "quiz_room_id": "4",
+      "object_to_sort_id": "8",
+      "object_to_repair_id": "2"
+    },
+    {
+      "quiz_room_id": "5",
+      "object_to_sort_id": "8",
+      "object_to_repair_id": "3"
+    },
+    {
+      "quiz_room_id": "1",
+      "object_to_sort_id": "8",
+      "object_to_repair_id": "4"
+    },
+    {
+      "quiz_room_id": "2",
+      "object_to_sort_id": "8",
+      "object_to_repair_id": "5"
+    },
+    {
+      "quiz_room_id": "3",
+      "object_to_sort_id": "8",
+      "object_to_repair_id": "6"
+    },
+    {
+      "quiz_room_id": "4",
+      "object_to_sort_id": "8",
+      "object_to_repair_id": "7"
+    },
+    {
+      "quiz_room_id": "5",
+      "object_to_sort_id": "8",
+      "object_to_repair_id": "8"
+    },
+    {
+      "quiz_room_id": "1",
+      "object_to_sort_id": "8",
+      "object_to_repair_id": "9"
+    },
+    {
+      "quiz_room_id": "2",
+      "object_to_sort_id": "8",
+      "object_to_repair_id": "10"
+    },
+    {
+      "quiz_room_id": "3",
+      "object_to_sort_id": "8",
+      "object_to_repair_id": "11"
+    },
+    {
+      "quiz_room_id": "4",
+      "object_to_sort_id": "8",
+      "object_to_repair_id": "12"
+    },
+    {
+      "quiz_room_id": "5",
+      "object_to_sort_id": "8",
+      "object_to_repair_id": "13"
+    },
+    {
+      "quiz_room_id": "1",
+      "object_to_sort_id": "8",
+      "object_to_repair_id": "14"
+    },
+    {
+      "quiz_room_id": "2",
+      "object_to_sort_id": "8",
+      "object_to_repair_id": "15"
+    },
+    {
+      "quiz_room_id": "3",
+      "object_to_sort_id": "8",
+      "object_to_repair_id": "16"
+    },
+    {
+      "quiz_room_id": "4",
+      "object_to_sort_id": "8",
+      "object_to_repair_id": "17"
+    },
+    {
+      "quiz_room_id": "5",
+      "object_to_sort_id": "8",
+      "object_to_repair_id": "18"
+    }
+  ]
+}
