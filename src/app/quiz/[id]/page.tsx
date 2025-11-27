@@ -122,7 +122,9 @@ export default function Quiz() {
               </article>
             ) : (
               <article className="answer_zone">
-                <p>Question : {firstQuestion?.mission}</p>
+                <p>
+                  Question n° {secondQuestion?.id} : {firstQuestion?.mission}
+                </p>
                 <div>
                   {firstQuestion?.answers.map((object) => (
                     <button
