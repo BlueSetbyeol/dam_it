@@ -5,13 +5,14 @@ import type {
   roomQuestions,
   objectToQuiz,
 } from "../../types/quizType";
-import quiz from "../../lib/quiz_schema_V2.json";
+import quiz from "../../lib/quiz_schema.json";
 import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import Logo from "../../../../public/logo_dam_it.png";
 import Sort from "../../../../public/sorting electronic waste.png";
 import Repair from "../../../../public/electronic-product-repair.png";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Quiz() {
   const { id } = useParams();
@@ -102,6 +103,10 @@ export default function Quiz() {
   const [beginToFinish, setBeginToFinish] = useState(true);
   const [endGame, setEndGame] = useState(false);
 
+  if (firstQuestion) {
+    console.log(firstQuestion.image.length > 24);
+  }
+
   return (
     <>
       {!endGame ? (
@@ -150,7 +155,9 @@ export default function Quiz() {
             </article>
           ) : (
             <article className="answer_zone">
-              <p>Question : {secondQuestion?.mission}</p>
+              <p>
+                Question n° {secondQuestion?.id}: {secondQuestion?.mission}
+              </p>
               <div>
                 {secondQuestion?.answers.map(
                   (object) =>
@@ -202,6 +209,7 @@ export default function Quiz() {
               </div>
             </article>
           </section>
+          <Link href="/">Go back Home ↩</Link>
         </article>
       )}
     </>
