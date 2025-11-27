@@ -1,5 +1,5 @@
 import Link from "next/link";
-import rooms from "./lib/quiz_schema_V2.json";
+import rooms from "./lib/quiz_schema.json";
 
 export default function Home() {
   const availableSteps = rooms.quiz_room;
