@@ -255,7 +255,7 @@
         { "name": "second", "value": "Clean the fans and vents" },
         { "name": "third", "value": "Cover the laptop to muffle the noise" }
       ],
-      "good_answer": ["third"],
+      "good_answer": ["second"],
       "challenge_type": "repair",
       "precision": "Dust buildup is a major cause of noise and overheating. Cleaning extends the laptop's lifespan and improves performance.The website https://fr.ifixit.com/ provides access to excellent tutorials on methods and best practices for repairing electronic devices."
     },
@@ -343,7 +343,7 @@
       "answers": [
         { "name": "first", "value": "Change the batteries" },
         { "name": "second", "value": "Buy a new PC" },
-        { "name": "third", "value": "" }
+        { "name": "third", "value": "Eat it" }
       ],
       "good_answer": ["first"],
       "challenge_type": "repair",
