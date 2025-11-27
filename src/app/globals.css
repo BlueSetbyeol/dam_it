@@ -100,7 +100,7 @@ h2 {
 }
 
 .step_box:hover {
-  filter: drop-shadow(0 0 2.5em #ffd700);
+  filter: drop-shadow(0 0 0.8em #ffd9008a);
 }
 
 .quizRoom {
@@ -135,6 +135,11 @@ h2 {
   border: none;
   padding: 1em;
   border-radius: 8px;
+}
+
+.mission_zone button:hover,
+.solutions:hover {
+  filter: drop-shadow(0 0 0.8em #1a4e3057);
 }
 
 .answer_zone {
