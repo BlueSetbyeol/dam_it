@@ -51,9 +51,12 @@ export default function Quiz() {
           sort.id === Number(questionsAvailable[random].object_to_repair_id)
       );
       setSecondQuestion(newSecondQuestion);
-
+    }
+  }, []);
+  useEffect(() => {
+    if (firstQuestion && secondQuestion) {
       const setOfFirstAnswer: string[] = [];
-      firstQuestion?.good_answer.forEach((goodAnswer) => {
+      firstQuestion.good_answer.forEach((goodAnswer) => {
         const findAnswer = firstQuestion.answers.find(
           (answer) => answer.name === goodAnswer
         );
@@ -64,7 +67,7 @@ export default function Quiz() {
       setFirstAnswer(setOfFirstAnswer);
 
       const setOfSecondAnswer: string[] = [];
-      secondQuestion?.good_answer.forEach((goodAnswer) => {
+      secondQuestion.good_answer.forEach((goodAnswer) => {
         const findAnswer = secondQuestion.answers.find(
           (answer) => answer.name === goodAnswer
         );
@@ -74,7 +77,7 @@ export default function Quiz() {
       });
       setSecondAnswer(setOfSecondAnswer);
     }
-  }, []);
+  }, [firstQuestion]);
 
   const [finalScore, setFinalScore] = useState<number>(0);
 
@@ -171,19 +174,34 @@ export default function Quiz() {
         </section>
       ) : (
         <article className="final_result">
-          <Image src={Logo} alt="logo dam IT" className="logo_end" />
           <h3>Your result is : {finalScore}/2</h3>
-          <p>For your information :</p>
-          <div className="info_card">
-            <p>Question I : {firstQuestion?.mission}</p>
-            <p>Answer I : {firstAnswer}</p>
-            <p>More : {firstQuestion?.precision}</p>
-          </div>
-          <div className="info_card">
-            <p>Question II : {firstQuestion?.mission}</p>
-            <p>Answer II : {firstAnswer}</p>
-            <p>More : {firstQuestion?.precision}</p>
-          </div>
+          <p>
+            Step to :{" "}
+            {finalScore > 0
+              ? `${finalScore} steps forward`
+              : "the same step you are on"}
+          </p>
+          <p id="details">For your information :</p>
+          <section>
+            <article className="more_information">
+              <div className="info_card">
+                <p>❓ : {firstQuestion?.mission}</p>
+                <p>❗ : {firstAnswer}</p>
+              </div>
+              <div className="info_card">
+                <p>✔️ : {firstQuestion?.precision}</p>
+              </div>
+            </article>
+            <article className="more_information">
+              <div className="info_card">
+                <p>❓ : {secondQuestion?.mission}</p>
+                <p>❗ : {secondAnswer}</p>
+              </div>
+              <div className="info_card">
+                <p>✔️ : {secondQuestion?.precision}</p>
+              </div>
+            </article>
+          </section>
         </article>
       )}
     </>
