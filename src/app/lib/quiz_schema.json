@@ -6,19 +6,19 @@
     },
     {
       "id": 2,
-      "room_nd": 8
+      "room_nd": 2
     },
     {
       "id": 3,
-      "room_nd": 13
+      "room_nd": 3
     },
     {
       "id": 4,
-      "room_nd": 23
+      "room_nd": 4
     },
     {
       "id": 5,
-      "room_nd": 28
+      "room_nd": 5
     }
   ],
   "object_to_sort": [
