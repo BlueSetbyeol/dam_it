@@ -28,6 +28,11 @@
 body {
   font-family: var(--main_font);
   font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .logo {
@@ -43,17 +48,15 @@ body {
 }
 
 main {
-  height: 95vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
 footer {
-  height: 5vh;
   display: flex;
   justify-content: space-evenly;
+  gap: 1em;
   align-items: center;
 }
 
@@ -190,7 +193,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   gap: 0.7em;
-  margin: 9em 1.5em 0;
+  margin: 10em 1.5em 1em;
 }
 
 .final_result h3 {
